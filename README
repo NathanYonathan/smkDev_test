@@ -1,0 +1,15 @@
+Balanced Brackets
+Problem Statement
+Diberikan sebuah string yang berisi berbagai jenis kurung ((), [], {}), tentukan apakah string tersebut seimbang. Sebuah string dianggap seimbang jika setiap kurung pembuka memiliki kurung penutup yang sesuai dengan jenis yang sama dan kurung-kurung tersebut terstruktur dengan benar.
+
+Solusi
+Fungsi isBalanced menggunakan tumpukan (stack) untuk memastikan bahwa kurung-kurung tersebut seimbang. Fungsi ini mengiterasi melalui setiap karakter dalam string input, mendorong kurung pembuka ke dalam tumpukan dan mengeluarkan dari tumpukan saat menemukan kurung penutup yang sesuai. Jika tumpukan kosong di akhir, maka string tersebut seimbang.
+
+Analisis Kompleksitas
+Kompleksitas Waktu: O(n)
+
+-Fungsi ini memproses setiap karakter dalam string input tepat sekali, menghasilkan kompleksitas waktu linear.
+
+Kompleksitas Ruang: O(n)
+
+- Kompleksitas ruang adalah linear dalam kasus terburuk, di mana ukuran tumpukan bisa mencapai setengah panjang string input.
